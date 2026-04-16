@@ -24,17 +24,8 @@ export const STORAGE_KEYS = {
 export const ROUTES = {
   // Auth
   LOGIN:      '/login',
-  FORGOT_PWD: '/forgot-password',
-
   // App
   DASHBOARD:  '/dashboard',
-  STUDENTS:   '/students',
-  ATTENDANCE: '/attendance',
-  GRADES:     '/grades',
-  FEES:       '/fees',
-  NOTICES:    '/notices',
-  TIMETABLE:  '/timetable',
-  PROFILE:    '/profile',
 };
 
 // ── Pagination defaults ───────────────────────────────────────
@@ -51,26 +42,4 @@ export const HTTP_STATUS = {
   NOT_FOUND:             404,
   UNPROCESSABLE_ENTITY:  422,
   INTERNAL_SERVER_ERROR: 500,
-};
-
-
-
-// ── API Endpoints ─────────────────────────────────────────────
-export const ENDPOINTS = {
-  AUTH: {
-    LOGIN: '/auth/login',
-    REFRESH_TOKEN: '/auth/refresh',
-    LOGOUT: '/auth/logout',
-  },
-
-  STUDENTS: {
-    LIST: '/students',
-    CREATE: '/students',
-    UPDATE: (id) => `/students/${id}`,
-    DELETE: (id) => `/students/${id}`,
-  },
-
-  DASHBOARD: {
-    STATS: '/dashboard/stats',
-  },
 };
